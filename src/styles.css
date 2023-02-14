@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base{
+  @font-face {
+    font-family: 'Bundes Sans';
+    src: url('../assets/font/BundesSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+/* hero tab css */
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: grid;
+}
+
+.tab.active {
+  border-color: #780f2d;
+}
